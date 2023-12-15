@@ -18,18 +18,16 @@ def volumedown():
         sleep(0.1)
 
 
-#def brightness_up():
-#    # Simulate pressing the brightness up key multiple times
-#    global i
-#    if i > 101:
-#       i=10
-#       sbc.set_brightness(i)
-#    else:
-#        sbc.set_brightness(i)
-#    i=i+10
-#
-#def brightness_down():
-#    # Simulate pressing the brightness down key multiple times
-#    sbc.fade_brightness(50)
-
+def brightness_up():
+    # Simulate pressing the brightness up key multiple times
+    global i
+    if i > 101:
+       i=10
+       sbc.set_brightness(i)
+    else:
+        sbc.set_brightness(i)
+   i=i+10
+def brightness_down():
+   # Simulate pressing the brightness down key multiple times
+   sbc.fade_brightness(50)
 
