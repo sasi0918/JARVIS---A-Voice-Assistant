@@ -242,16 +242,16 @@ if __name__ == "__main__":
                      from Whatsapp import sendMessage
                      sendMessage()
  
-                #elif "alarm" in query:
-                #        print("input time example:- 10 and 10 and 10")
-                #        speak("Set the time")
-                #        a = input("Please tell the time :- ")
-                #        alarm(a)
-                #        speak("Done,BOSS")
+                elif "alarm" in query:
+                        print("input time example:- 10 and 10 and 10")
+                        speak("Set the time")
+                        a = input("Please tell the time :- ")
+                        alarm(a)
+                        speak("Done,BOSS")
                         
-                # elif "what is " in query:
-                #    from OpenAIFile import get_openai_info
-                #    get_openai_info()
+                 elif "what is " in query:
+                    from OpenAIFile import get_openai_info
+                    get_openai_info()
                         
                 elif " time" in query:
                     strTime = datetime.datetime.now().strftime("%I:%M %p")    
@@ -302,9 +302,9 @@ if __name__ == "__main__":
                     weather_info = get_weather(API_KEY, city)
                     speak(weather_info)
                     
-#                elif"music" in query:
-#                    from music import play_music
-#                    speak("playing music")
-#                    play_music()    
+                elif"music" in query:
+                    from music import play_music
+                    speak("playing music")
+                    play_music()    
 
 
